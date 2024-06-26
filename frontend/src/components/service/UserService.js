@@ -24,6 +24,7 @@ class UserService {
     /**AUTHENTICATION CHECKER */
     static logout() {
         localStorage.removeItem('token');
+        return true;
     }
 
     static isAuthenticated() {
