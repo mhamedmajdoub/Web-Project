@@ -33,7 +33,7 @@ const Footer = () => {
 
       <div className='footer-attribution'>
         Made by : <span> </span>
-        <a href='https://mdbootstrap.com/' target='_blank' rel='noopener noreferrer' style={{color:"red"}}>
+        <a href='https://drive.google.com/drive/folders/1SL0C0ZUYhsWxposfw4gvQI5E5fS-hr7B?usp=sharing' target='_blank' rel='noopener noreferrer' style={{color:"red"}}>
            M'hamed MAJDOUB
         </a>
       </div>
