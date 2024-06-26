@@ -1,20 +1,44 @@
-import React from 'react'
-import { Box, Stack, Typography } from '@mui/material';
-import Logo from '../assets/images/Logo.png';
-
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGooglePlusG, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <Box mt="80px" bgcolor="#FFF3F4">
-      <Stack  alignItems="center" gap="40px" pt ="24px" px="40px">
-        <img src={Logo} alt="logo" width="170px" height="100px"/>
-        
-        <Typography variant="h6" pb="40px" mt="20px" fontWeight="bold">
-            Web module Project
-        </Typography>
-      </Stack>
-    </Box>
-  )
+    <footer className='footer-container'>
+      <div className='social-icons'>
+        <a
+          href='mailto:mhamedmajdoub.ing@gmail.com'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faGooglePlusG} />
+        </a>
+
+        <a
+          href='https://www.linkedin.com/in/mhamed-majdoub/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
+
+        <a
+          href='https://github.com/mhamedmajdoub'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
+      </div>
+
+      <div className='footer-attribution'>
+        Made by : <span> </span>
+        <a href='https://mdbootstrap.com/' target='_blank' rel='noopener noreferrer' style={{color:"red"}}>
+           M'hamed MAJDOUB
+        </a>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
